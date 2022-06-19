@@ -8,6 +8,7 @@
   --background-black: #2f303a;
   --color-a-grey: rgba(255, 255, 255, 0.6);
   --main-button: #188ce8;
+  --fill-icon: #AFB1B8;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -37,11 +38,21 @@ img {
   width: 1200px;
   display: flex;
 }
+.header-mail{
+  display: flex;
+}
+.mail-icon{
+margin-right: 10px;
+}
+.tel-icon{
+  margin-right: 10px;
+}
 .menu{
   display: flex;
   margin-top: 32px;
   margin-bottom: 32px;
 }
+
 .logo {
   font-family: "Raleway";
   font-size: 26px;
@@ -90,10 +101,10 @@ img {
   padding-left: 0px;
 }
 .header-mail{
-  padding-left: 331px;
+  padding-left: 305px;
 }
 .header-tel{
-  padding-left: 50px;
+  padding-left: 30px;
 }
 .header-contact .link {
   text-decoration: none;
@@ -109,6 +120,13 @@ img {
   padding-bottom: 200px;
   background-color: var(--background-black);
   text-align: center;
+  background-image: url(/imeges/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-h {
   font-weight: 900;
@@ -145,6 +163,34 @@ height: 50px;
 .benefits{
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.benefits-back{
+  background-color: #F5F4FA;
+  width: 270px;
+  height: 120px;
+}
+.benefits-ul-li::before{
+  content: '';
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-grey);
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.benefits-ul-li:nth-child(1)::before{
+  background-image: url(../imeges/icons.svg/benefits1.svg);
+}
+.benefits-ul-li:nth-child(2)::before{
+  background-image: url(../imeges/icons.svg/benefits2.svg);
+}
+.benefits-ul-li:nth-child(3)::before{
+  background-image: url(../imeges/icons.svg/benefits3.svg);
+}
+.benefits-ul-li:nth-child(4)::before{
+  background-image: url(../imeges/icons.svg/benefits4.svg);
 }
 .benefits-ul {
   list-style: none;
@@ -238,8 +284,76 @@ text-align: center;
  background-color: var(--background-white);
  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
+ width: 270px;
+ height: 438px
+}
+.icon-ul{
+  list-style: none;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.icon-li:not(:last-child){
+ margin-right: 10px;
+}
+.icon-li{
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+}
+.icon-svg{
+  fill: var(--fill-icon);
+}
+.icon-li:hover,
+.icon-li:focus{
+  background-color: var(--blue-color);
+  border-radius: 50%;
+}
+.icon-svg:hover,
+.icon-svg:focus{
+  fill: var(--white-color);
+}
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-h{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--black-color);
+}
+.clients-ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.clients-logo{
+  border: 1px solid var(--fill-icon);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
 
 }
+.clients-logo:hover,
+.clients-logo:focus{
+
+}
+
+.clients-li:not(:last-child){
+  margin-right: 30px;
+}
+.clients-link{
+  cursor: pointer;
+  width: 170px;
+  height: 92px;
+}
+
+
 /* footer */
 .footer{
   padding-top: 60px;
