@@ -9,6 +9,7 @@
   --color-a-grey: rgba(255, 255, 255, 0.6);
   --main-button: #188ce8;
   --fill-icon: #AFB1B8;
+  --footer-icon-back: rgba(255, 255, 255, 0.1);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -96,6 +97,7 @@ margin-right: 10px;
   margin-top: 32px;
   margin-bottom: 32px;
   padding-left: 0;
+  /* align-items: center; */
 }
 .header-mail{
   padding-left: 305px;
@@ -290,7 +292,7 @@ border-radius: 0px 0px 4px 4px;
   padding-top: 16px;
   padding-bottom: 30px;
   padding-left: 32px;
-  padding-right: 32px;
+  padding-right: 32px; 
 }
 .icon-li:not(:last-child){
  margin-right: 10px;
@@ -323,22 +325,26 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--black-color);
+  margin-bottom: 50px;
 }
 .clients-ul{
   list-style: none;
   display: flex;
   justify-content: space-between;
+ 
 }
 .clients-logo{
   border: 1px solid var(--fill-icon);
   border-radius: 4px;
   width: 170px;
   height: 92px;
-
+  fill: var(--fill-icon);
+  padding: 16px 32px;
 }
 .clients-logo:hover,
 .clients-logo:focus{
-
+  fill: var(--blue-color);
+  border-color: var(--blue-color);
 }
 
 .clients-li:not(:last-child){
@@ -350,13 +356,49 @@ border-radius: 0px 0px 4px 4px;
   height: 92px;
 }
 
-
 /* footer */
 .footer{
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-black);
 }
+.footer-icon{
+  display: flex;
+
+}
+.footer-p{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+color: var(--white-color);
+margin-bottom: 20px;
+}
+.footer-icon-ul{
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.footer-icon-li{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--footer-icon-back);
+  padding: 12px;
+}
+.footer-icon-li:hover,
+.footer-icon-li:focus{
+  background-color: var(--blue-color);
+}
+.footer-icon-li:not(:last-child){
+  margin-right: 10px;
+}
+.footer-icon-svg{
+  fill: var(--white-color);
+}
+
 .logo-footer {
   font-family: "Raleway";
   font-weight: 700;
@@ -410,6 +452,10 @@ color: var(--color-a-grey);
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--blue-color);
+}
+.join{
+margin-left: 70px;
+padding-top: 12px;
 }
 /* портфолио */
 .global-box{
