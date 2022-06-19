@@ -10,6 +10,7 @@
   --main-button: #188ce8;
   --fill-icon: #AFB1B8;
   --footer-icon-back: rgba(255, 255, 255, 0.1);
+  --biznes-gradient: rgba(47, 48, 58, 0.4);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -118,8 +119,12 @@ margin-right: 10px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--background-black);
-  text-align: center;
-  background-image: url(../imeges/background.jpg);
+  text-align: center; 
+  background-image: linear-gradient(
+      to right,
+      var(--hero-linear-gradient),
+      var(--hero-linear-gradient)
+    ), url(../imeges/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -143,7 +148,7 @@ margin-right: 10px;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--white-color);
-  background-color: var(--background-black);
+  background-color: var(--blue-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 border: none;
