@@ -49,6 +49,7 @@ img {
   display: flex;
   margin-top: 32px;
   margin-bottom: 32px;
+  margin-left: 43px;
 }
 
 .logo {
@@ -62,7 +63,7 @@ img {
   margin-bottom: 25px;
 }
 .menu-link{
-  padding-left: 50px;
+  margin-left: 50px;
 }
 .logo-web {
   color: var(--blue-color);
@@ -121,6 +122,12 @@ img {
 }
 .tel-tel{
   margin-left: 30px;
+}
+.icon-mail{
+  margin-right: 5px;
+}
+.icon-tel{
+  margin-right: 5px;
 }
 
 /* .link-link{
@@ -277,7 +284,7 @@ height: 50px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color);
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .team-li-p {
   font-weight: 400;
@@ -308,15 +315,12 @@ text-align: center;
  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
  width: 270px;
- height: 438px
 }
 .icon-ul{
   list-style: none;
   display: flex;
-  padding-top: 16px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px; 
+  margin-top: 16px;
+  justify-content: center;
 }
 .icon-li:not(:last-child){
  margin-right: 10px;
@@ -371,9 +375,10 @@ border-radius: 0px 0px 4px 4px;
   display: flex;
   justify-content: space-between;
 }
-.clients-link{
+.clients-link{ 
   display: flex;
   justify-content: center;
+  /* align-items: center; */
   width: 170px;
   height: 92px;
   cursor: pointer;
@@ -382,6 +387,7 @@ border-radius: 0px 0px 4px 4px;
   border-radius: 4px;
   padding: 16px 32px;
 }
+
 .clients-link:hover,
 .clients-link:focus{
   fill: var(--blue-color);
